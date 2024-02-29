@@ -9,10 +9,13 @@ window.onload = () => {
 function main(){
     const root = document.getElementById('root');
     const btn = document.getElementById('change-btn');
+    const h1 = document.getElementById('h1');
+
 
     btn.addEventListener('click', function(){
         const bgColor = genaratorRGBColor();
-        root.style.backgroundColor = bgColor
+        root.style.backgroundColor = bgColor;
+        h1.style.color = bgColor;
     })
 
 }
